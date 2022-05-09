@@ -1,0 +1,99 @@
+{
+    "status": "ok",
+    "totalResults": 9,
+    "articles": [
+        {
+            "source": { "id": "fox-sports", "name": "Fox Sports" },
+            "author": "FOX Sports",
+            "title": "2022 Kentucky Derby odds: 80-1 long shot Rich Strike wins Run for Roses",
+            "description": "Late entrant Rich Strike stuns sports world by winning Kentucky Derby",
+            "url": "http://www.foxsports.com/stories/other/kentucky-derby-odds-80-1-long-shot-rich-strike-wins-run-for-roses",
+            "urlToImage": "https://a57.foxsports.com/statics.foxsports.com/www.foxsports.com/content/uploads/2022/05/1408/814/05.7.22_Rich-Strike-wins-Kentucky-Derby_16x9.jpg?ve=1&tl=1",
+            "publishedAt": "2022-05-08T00:12:14Z",
+            "content": "Bettors who love to play long shots hit it big at the 148th Kentucky Derby on Saturday at Churchill Downs in Louisville.\r\nRich Strike, a late entrant in the grandest horse race, went off at 80-1 odds… [+1756 chars]"
+        },
+        {
+            "source": { "id": "lequipe", "name": "L'equipe" },
+            "author": "L'EQUIPE",
+            "title": "L'Équipe - L'actualité du sport en continu.",
+            "description": "Le sport en direct sur L'Équipe. Les informations, résultats et classements de tous les sports. Directs commentés, images et vidéos à regarder et à partager !",
+            "url": "https://www.lequipe.fr/Tennis/Actualites/Alexander-zverev-bat-enfin-stefanos-tsitsipas-sur-terre-battue/1331899#xtor=RSS-1",
+            "urlToImage": "https://medias.lequipe.fr/img-photo-png/-/1500000000833469/0-0-0-70/0cb67.png",
+            "publishedAt": "2022-05-07T23:12:00+00:00",
+            "content": "01:12\r\nZverev bat enfin Tsitsipas sur terre\r\n7 mai\r\nJabeur remporte son premier WTA 1000\r\n7 mai\r\nCornet, jeu, set et roman\r\n7 mai\r\nAucun Français au 1er tour, une première depuis 51 ans\r\n7 mai\r\nL'exp… [+705 chars]"
+        },
+        {
+            "source": { "id": "lequipe", "name": "L'equipe" },
+            "author": "L'EQUIPE",
+            "title": "L'Équipe - L'actualité du sport en continu.",
+            "description": "Le sport en direct sur L'Équipe. Les informations, résultats et classements de tous les sports. Directs commentés, images et vidéos à regarder et à partager !",
+            "url": "https://www.lequipe.fr/Football/Actualites/Antoine-kombouare-nantes-exceptionnel-unique-presque-miraculeux/1331890#xtor=RSS-1",
+            "urlToImage": "https://medias.lequipe.fr/img-photo-png/-/1500000000833469/0-0-0-70/0cb67.png",
+            "publishedAt": "2022-05-07T22:38:00+00:00",
+            "content": "00:57\r\nSchalke 04 de retour en Bundesliga\r\n00:47\r\nKolo Muani : «Une soirée gravée à vie»\r\n00:38\r\nKombouaré : «Du domaine du miracle»\r\n00:19\r\nGaltier : «Les têtes sont lourdes, les joueurs sont triste… [+790 chars]"
+        },
+        {
+            "source": { "id": "lequipe", "name": "L'equipe" },
+            "author": "L'EQUIPE",
+            "title": "L'Équipe - L'actualité du sport en continu.",
+            "description": "Le sport en direct sur L'Équipe. Les informations, résultats et classements de tous les sports. Directs commentés, images et vidéos à regarder et à partager !",
+            "url": "https://www.lequipe.fr/Esport/Actualites/Esport-league-of-legends-hantera-il-nous-fallait-juste-du-temps/1331882#xtor=RSS-1",
+            "urlToImage": "https://medias.lequipe.fr/img-photo-png/-/1500000000833469/0-0-0-70/0cb67.png",
+            "publishedAt": "2022-05-07T22:27:00+00:00",
+            "content": "00:27\r\nHantera : «Il nous fallait juste du temps»\r\n7 mai\r\nLa Karmine Corp intouchable\r\n7 mai\r\n« Une finale d'European Masters, c'est différent »\r\n6 mai\r\nMais pourquoi la France domine autant les Euro… [+807 chars]"
+        },
+        {
+            "source": { "id": "nrk", "name": "NRK" },
+            "author": "NRK",
+            "title": "De siste sportsnyhetene fra NRK",
+            "description": "Her får du de siste sportsnyhetene fra NRK.",
+            "url": "https://www.nrk.no/sport/sportsnyheter-1.14660227#1.15958620.1.15958620",
+            "urlToImage": "https://gfx.nrk.no/7kT5zGoE2E-GnUKLojH1PQ0I1Nze4Ypu8lxM-oBjubQw.jpg",
+            "publishedAt": "2022-05-07T20:52:18.170604Z",
+            "content": "7. mai2022kl.12:35Johannes Lønnestad Flaaten tok individuelt gull og stafettsølv i junior-VM. Nå står 20-åringen uten tilbud fra både landslag og regionlag, avslører han overfor NRK.\r\n Etter mine pre… [+1030 chars]"
+        },
+        {
+            "source": { "id": "wired", "name": "Wired" },
+            "author": "Wired",
+            "title": "Hockey Star Zach Hyman Has Made Esports His Off-Ice Hustle",
+            "description": "The Oilers forward's experience playing in the NHL and gaming with his family put him in a unique spot to translate traditional sports into pixels.",
+            "url": "https://www.wired.com/story/zach-hyman-esports-gaming-hockey-edmonton-oilers",
+            "urlToImage": "https://media.wired.com/photos/6275a8a81ccd62686f07101a/191:100/w_1280,c_limit/Zach-Hyman-GettyImages-1236651174.jpg",
+            "publishedAt": "2022-05-07T11:00:00Z",
+            "content": "Growing up in Toronto, Edmonton Oilers forward Zach Hyman and his four younger brothers bonded over gamesbasketball, soccer, and ball hockey outside, ice hockey at local arenas, and whatever Mario or… [+2931 chars]"
+        },
+        {
+            "source": { "id": "fox-sports", "name": "Fox Sports" },
+            "author": "FOX Sports",
+            "title": "USFL odds Week 4: Why you should bet on the New Orleans Breakers",
+            "description": "FOX Sports betting analyst Sammy Panayotovich gives his best bet for this weekend's USFL showdown involving the Breakers and Gamblers.",
+            "url": "http://www.foxsports.com/stories/usfl/usfl-odds-week-4-why-you-should-bet-on-the-new-orleans-breakers",
+            "urlToImage": "https://a57.foxsports.com/statics.foxsports.com/www.foxsports.com/content/uploads/2022/05/1408/814/05.6.22_USFL-Sammy-Best-Bet_New-Orleans-V2_16x9.jpg?ve=1&tl=1",
+            "publishedAt": "2022-05-06T23:05:47Z",
+            "content": "By Sam Panayotovich\r\nFOX Sports Betting Analyst\r\nIts hard to believe were already in Week 4 of the USFL season.\r\nTime flies when youre having fun.\r\nThe New Orleans Breakers (2-1) face the Houston Gam… [+2136 chars]"
+        },
+        {
+            "source": { "id": "bleacher-report", "name": "Bleacher Report" },
+            "author": "Tom Taylor",
+            "title": "UFC 274 Predictions: Bleacher Report Main Card Staff Picks",
+            "description": "UFC 274 goes down this Saturday in Phoenix, Arizona. That means it's time for the B/R combat sports squad to risk their reputations with another round of pre-fight predictions...",
+            "url": "https://bleacherreport.com/articles/2955934-ufc-274-predictions-bleacher-report-main-card-staff-picks",
+            "urlToImage": "https://img.bleacherreport.net/img/images/photos/003/921/628/hi-res-b2ae285c120808774cb00e3ff4c67a9c_crop_exact.jpg?w=1200&h=1200&q=75",
+            "publishedAt": "2022-05-05T11:00:06Z",
+            "content": "Chris Unger/Getty Images\r\nUFC 274 goes down this Saturday in Phoenix, Arizona. That means it's time for the B/R combat sports squad to risk their reputations with another round of pre-fight predictio… [+1896 chars]"
+        },
+        {
+            "source": {
+                "id": "the-washington-times",
+                "name": "The Washington Times"
+            },
+            "author": "The Washington Times http://www.washingtontimes.com",
+            "title": "Latest Quizzes",
+            "description": "Take a break from the hard news of the day and enjoy a quiz on entertainment, sports, history and politics only from The Washington Times.",
+            "url": "https://www.washingtontimes.com/quiz/",
+            "urlToImage": null,
+            "publishedAt": "2021-02-10T03:52:37.2719772Z",
+            "content": "Featured Quizzes\r\nAttention all William Shakespeare experts. Pinpoint the prose's origin plucked from one of his many famous plays in this multiple-choice challenge.\r\n Shares \r\nName these legendary c… [+32652 chars]"
+        }
+    ]
+}
