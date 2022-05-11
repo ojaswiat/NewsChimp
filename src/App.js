@@ -1,11 +1,19 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import LoadingBar from "react-top-loading-bar";
 import React, { Component } from "react";
 import Navbar from "./components/Navbar";
 import News from "./components/News";
 
 export default class App extends Component {
+    state = {
+        progress: 0,
+    };
+
+    setProgress = (prog) => {
+        this.setState({ progress: prog });
+    };
+
     render() {
         let apiKey = "897b2c1c667443cbada74162caf79475";
         let categories = [
@@ -23,18 +31,31 @@ export default class App extends Component {
             <div>
                 <Router>
                     <Navbar categories={categories} />
+                    <LoadingBar
+                        color="#f11946"
+                        progress={this.state.progress}
+                        shadow={true}
+                        height={3}
+                    />
                     <Routes>
                         <Route
                             exact
                             index
                             path="/"
-                            element={<News key="/" apiKey={apiKey} />}
+                            element={
+                                <News
+                                    setProgress={this.setProgress}
+                                    key="/"
+                                    apiKey={apiKey}
+                                />
+                            }
                         />
                         <Route
                             exact
                             path="/general"
                             element={
                                 <News
+                                    setProgress={this.setProgress}
                                     key="general"
                                     apiKey={apiKey}
                                     category={"general"}
@@ -50,6 +71,7 @@ export default class App extends Component {
                                     path={"/" + category}
                                     element={
                                         <News
+                                            setProgress={this.setProgress}
                                             key={category}
                                             apiKey={apiKey}
                                             category={category}

@@ -16,6 +16,7 @@ export class News extends Component {
         country: PropTypes.string,
         category: PropTypes.string,
         apiKey: PropTypes.string,
+        setProgress: PropTypes.func,
     };
 
     constructor(props) {
@@ -42,9 +43,14 @@ export class News extends Component {
 
     async populateCurrentPage(page) {
         this.setState({ loading: true });
+        this.props.setProgress(30);
+
         let newsApiEndpoint = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${page}&pageSize=${this.props.pageSize}`;
         let data = await fetch(newsApiEndpoint);
         let parsedData = await data.json();
+
+        this.props.setProgress(60);
+
         this.setState({
             articles: parsedData.articles,
             totalResults: parsedData.totalResults,
@@ -54,12 +60,12 @@ export class News extends Component {
             loading: false,
         });
 
+        this.props.setProgress(100);
         return parsedData;
     }
 
     fetchData = async (page) => {
         this.setState({ page: this.state.page + 1 });
-
         let newsApiEndpoint = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${page}&pageSize=${this.props.pageSize}`;
         let data = await fetch(newsApiEndpoint);
         let parsedData = await data.json();
