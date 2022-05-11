@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NewsItem from "./NewsItem";
 import PropTypes from "prop-types";
 import Spinner from "./Spinner";
+import InfiniteScroll from "react-infinite-scroll-component";
 
 export class News extends Component {
     static defaultProps = {
@@ -17,8 +18,10 @@ export class News extends Component {
         apiKey: PropTypes.string,
     };
 
-    constructor() {
-        super();
+    constructor(props) {
+        // if you want to use props inside the constructor then you have to receive and send it to the super function.
+        // otherwise you can only use props using this.props.param in other parts of the code and not inside the constructor.
+        super(props);
         // setting initial default state in the constructor
         this.state = {
             articles: [],
@@ -27,6 +30,14 @@ export class News extends Component {
             totalResults: 0,
             maxNumberOfPages: 0,
         };
+        if (!this.props.category || this.props.category === "general") {
+            document.title = "NewsChimp | Daily Stories";
+        } else {
+            document.title =
+                "NewsChimp | " +
+                this.props.category.charAt(0).toUpperCase() +
+                this.props.category.slice(1);
+        }
     }
 
     async populateCurrentPage(page) {
@@ -34,7 +45,6 @@ export class News extends Component {
         let newsApiEndpoint = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${page}&pageSize=${this.props.pageSize}`;
         let data = await fetch(newsApiEndpoint);
         let parsedData = await data.json();
-        console.log(parsedData);
         this.setState({
             articles: parsedData.articles,
             totalResults: parsedData.totalResults,
@@ -43,36 +53,25 @@ export class News extends Component {
             ),
             loading: false,
         });
+
+        return parsedData;
     }
+
+    fetchData = async (page) => {
+        this.setState({ page: this.state.page + 1 });
+
+        let newsApiEndpoint = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${page}&pageSize=${this.props.pageSize}`;
+        let data = await fetch(newsApiEndpoint);
+        let parsedData = await data.json();
+        this.setState({
+            articles: this.state.articles.concat(parsedData.articles),
+        });
+    };
 
     componentDidMount() {
         // runs after render method
         this.populateCurrentPage(1);
     }
-
-    nextPage = () => {
-        if (this.state.page >= this.state.maxNumberOfPages) {
-            return;
-        } else {
-            this.populateCurrentPage(this.state.page + 1);
-            // modifying state after rendering the current page because of async await issue
-            this.setState({
-                page: this.state.page + 1,
-            });
-        }
-    };
-
-    previousPage = () => {
-        if (this.state.page <= 1) {
-            return;
-        } else {
-            this.populateCurrentPage(this.state.page - 1);
-            // modifying state after rendering the current page because of async await issue
-            this.setState({
-                page: this.state.page - 1,
-            });
-        }
-    };
 
     render() {
         let headlineCategory = "";
@@ -82,42 +81,39 @@ export class News extends Component {
                 this.props.category.slice(1);
         }
         return (
-            <div className="container my-5">
+            <div className="container my-5 pt-5">
                 <h1>NewsChimp - Top {headlineCategory} Headlines</h1>
-                {this.state.loading && <Spinner />}
                 <hr />
+                {/* {this.state.loading && <Spinner />} */}
                 <br />
-                <div className="row">
-                    {!this.state.loading &&
-                        this.state.articles.map((article) => {
-                            return (
-                                // have to give unique key to each item
-                                <div className="col-md-4" key={article.url}>
-                                    <NewsItem article={article} />
-                                </div>
-                            );
-                        })}
-                </div>
-                <div className="d-flex justify-content-between">
-                    <button
-                        disabled={this.state.page <= 1}
-                        onClick={this.previousPage}
-                        type="button"
-                        className="btn btn-light"
-                    >
-                        ← Previous
-                    </button>
-                    <button
-                        disabled={
-                            this.state.page >= this.state.maxNumberOfPages
-                        }
-                        onClick={this.nextPage}
-                        type="button"
-                        className="btn btn-light"
-                    >
-                        More Stories →
-                    </button>
-                </div>
+                {this.state.loading && <Spinner />}
+                <InfiniteScroll
+                    dataLength={this.state.articles.length}
+                    next={() => this.fetchData(this.state.page + 1)}
+                    hasMore={
+                        this.state.articles.length !== this.state.totalResults
+                    }
+                    loader={<Spinner />}
+                    endMessage={
+                        <div style={{ textAlign: "center" }}>
+                            <br />
+                            You've reached the end!
+                        </div>
+                    }
+                >
+                    <div className="container">
+                        <div className="row">
+                            {this.state.articles.map((article) => {
+                                return (
+                                    // have to give unique key to each item
+                                    <div className="col-md-4" key={article.url}>
+                                        <NewsItem article={article} />
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                </InfiniteScroll>
             </div>
         );
     }

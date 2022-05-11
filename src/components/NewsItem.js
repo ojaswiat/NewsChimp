@@ -11,9 +11,6 @@ export class NewsItem extends Component {
         const defaultUrlToImage =
             "https://media.istockphoto.com/photos/breaking-news-world-news-with-map-backgorund-picture-id1182477852?k=20&m=1182477852&s=612x612&w=0&h=I3wdSzT_5h1y9dHq_YpZ9AqdIKg8epthr8Guva8FkPA=";
 
-        const date = new Date(article.publishedAt);
-        const publishedDate = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
-
         return (
             <div className="card my-2">
                 <img
@@ -62,13 +59,19 @@ export class NewsItem extends Component {
                         </button>
                     </div>
                     <hr className="mb-3" />
-                    <div className="d-flex justify-content-between">
-                        <div>
-                            <p>{publishedDate}</p>
-                        </div>
-                        <div>
-                            <p>Source: {article.source.name}</p>
-                        </div>
+                    <div>
+                        <p>
+                            <em>
+                                By {article.author ? article.author : "Unknown"}{" "}
+                                on {new Date(article.publishedAt).toGMTString()}
+                            </em>
+                            <br />
+                            <strong>
+                                {article.source.name
+                                    ? article.source.name
+                                    : "Unknown"}
+                            </strong>
+                        </p>
                     </div>
                 </div>
             </div>
