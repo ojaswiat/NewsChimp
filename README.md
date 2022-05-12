@@ -3,16 +3,12 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/ojaswi825/NewsChimp">
-    <img src="./images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
 <h3 align="center">NewsChimp</h3>
 
-  <p align="center">
+<p align="center">
     A News fetching app created with React JS to demonstrate my skills.
-    <br />
-  </p>
+<br />
+</p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
