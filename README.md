@@ -7,6 +7,9 @@
 
 <p align="center">
     A News fetching app created with React JS to demonstrate my skills.
+    <a href="https://github.com/ojaswi825/newschimp">
+    <img src="./src/images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 <br />
 </p>
 </div>
