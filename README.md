@@ -6,8 +6,8 @@
 <h3 align="center">NewsChimp</h3>
 
 <p align="center">
-    A News fetching app created with React JS to demonstrate my skills.
-    <a href="https://github.com/ojaswi825/newschimp">
+    A News fetching app created with React JS to demonstrate my skills. Click on the icon below to launch the app.
+    <a href="https://pacific-stream-58779.herokuapp.com/">
     <img src="./src/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 <br />

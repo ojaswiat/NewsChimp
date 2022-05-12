@@ -15,7 +15,7 @@ export default class App extends Component {
     };
 
     render() {
-        let apiKey = process.env.REACT_APP_NEWS_API_KEY;
+        let apiKey = "897b2c1c667443cbada74162caf79475";
         let categories = [
             "business",
             "entertainment",
