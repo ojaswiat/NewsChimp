@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/ojaswi825/NewsChimp">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -70,14 +70,14 @@ A code editor if you want to edit the source code.
 1. Get a free API Key at [https://newsapi.org](https://newsapi.org)
 2. Clone the repo
     ```sh
-    git clone https://github.com/github_username/repo_name.git
+    git clone https://github.com/ojaswi825/NewsChimp.git
     ```
 3. Install NPM packages
     ```sh
     npm install
     ```
 4. Enter your API in `.env.local` file as:
-   REACT_APP_NEWS_API_KEY=897b2c1c667443cbada74162caf79475
+   REACT_APP_NEWS_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXX
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -88,6 +88,6 @@ A code editor if you want to edit the source code.
 Ojaswi Athghara - [LinkedIn: ](https://linkedin.com/in/ojaswi825)
 Ojaswi Athhgara - [Email: ](ojaswi.athghara98@gmail.com)
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [NewsChimp Repo](https://github.com/ojaswi825/NewsChimp)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
