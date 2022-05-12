@@ -75,6 +75,12 @@ A code editor if you want to edit the source code.
 4. Enter your API in `.env.local` file as:
    REACT_APP_NEWS_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXX
 
+5. Run on localhost
+    ```sh
+    cd NewsChimp
+    npm run start
+    ```
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
