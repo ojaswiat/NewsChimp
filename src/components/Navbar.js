@@ -50,6 +50,14 @@ export class Navbar extends Component {
                                 );
                             })}
                         </ul>
+                        <ul className="navbar-nav ml-auto mr-5">
+                            <li>
+                                <Link to={"/about"} className="nav-link">
+                                    {" "}
+                                    About
+                                </Link>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
             </div>

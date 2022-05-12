@@ -4,7 +4,7 @@ import LoadingBar from "react-top-loading-bar";
 import React, { Component } from "react";
 import Navbar from "./components/Navbar";
 import News from "./components/News";
-
+import About from "./components/About";
 export default class App extends Component {
     state = {
         progress: 0,
@@ -80,6 +80,11 @@ export default class App extends Component {
                                 />
                             );
                         })}
+                        <Route
+                            exact
+                            path={"/about"}
+                            element={<About appName="NewsChimp" />}
+                        />
                     </Routes>
                 </Router>
             </div>
