@@ -85,8 +85,7 @@ A code editor if you want to edit the source code.
 
 ## Contact
 
-Ojaswi Athghara - [LinkedIn: ](https://linkedin.com/in/ojaswi825)
-Ojaswi Athhgara - [Email: ](ojaswi.athghara98@gmail.com)
+Ojaswi Athghara - [LinkedIn](https://linkedin.com/in/ojaswi825) [Email](ojaswi.athghara98@gmail.com)
 
 Project Link: [NewsChimp Repo](https://github.com/ojaswi825/NewsChimp)
 
