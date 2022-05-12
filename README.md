@@ -59,10 +59,10 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-A good computer with Node JS 18.0 or higher and npm 8.8 or higher installed.
-A web browser.
-A Terminal app to execute commands.
-A code editor if you want to edit the source code.
+- A good computer with Node JS 18.0 or higher and npm 8.8 or higher installed.
+- A web browser.
+- A Terminal app to execute commands.
+- A code editor if you want to edit the source code.
 
 ### Installation
 
