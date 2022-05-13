@@ -48,6 +48,8 @@ This application is made by Ojaswi Athghara using React JS as primary front-end 
 -   [React.js](https://reactjs.org/)
 -   [Bootstrap](https://getbootstrap.com)
 -   [JQuery](https://jquery.com)
+-   [Infinite Scroll](https://www.npmjs.com/package/react-infinite-scroll-component)
+-   [React Top Loading Bar](https://www.npmjs.com/package/react-top-loading-bar)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -59,10 +61,10 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- A good computer with Node JS 18.0 or higher and npm 8.8 or higher installed.
-- A web browser.
-- A Terminal app to execute commands.
-- A code editor if you want to edit the source code.
+-   A good computer with Node JS 18.0 or higher and npm 8.8 or higher installed.
+-   A web browser.
+-   A Terminal app to execute commands.
+-   A code editor if you want to edit the source code.
 
 ### Installation
 
