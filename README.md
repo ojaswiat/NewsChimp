@@ -92,8 +92,8 @@ To get a local copy up and running follow these simple example steps.
 
 ## Contact
 
-Ojaswi Athghara - [LinkedIn](https://linkedin.com/in/ojaswi825) [Email](ojaswi.athghara98@gmail.com)
+Ojaswi Athghara - [LinkedIn](https://linkedin.com/in/ojaswiat) [Email](ojaswiat@gmail.com)
 
-Project Link: [NewsChimp Repo](https://github.com/ojaswi825/NewsChimp)
+Project Link: [NewsChimp Repo](https://github.com/ojaswiat/NewsChimp)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
